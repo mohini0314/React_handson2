@@ -1,0 +1,72 @@
+import './App.css';
+import './component';
+import Component1 from './component';
+import {useState} from "react"
+
+
+
+function App() {
+  const [name, setName] = useState("Aksha");
+  const [age, setAge] = useState(10);
+
+  console.log("name & age is ", name, age);
+
+  const handleOnClickName = () => {
+    setName("Simran");
+  }
+
+  const handleOnClickAge = () => {
+    setAge(20);
+  }
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p className="title">Styling using Functional and Class Components</p>
+        <div className="container">
+          <button id= "btn1" class="func_component" onClick={Car()}>To see styling in functional component</button>
+          <button id= "btn2" class="class_component" onClick="">To see styling in class component</button>
+        </div>
+        <div id= "root">  </div>
+        <div>
+      <h1>Context API</h1>
+      <button onClick={handleOnClickName}>change name</button>
+      <button onClick={handleOnClickAge}>change age</button>
+      <p>{name} {age}</p>
+      <Component1 nameProp={name} ageProp={age} />
+    </div>
+      </header>
+    </div>
+  );
+}
+
+
+
+
+import React from 'react';
+
+import ReactDOM from 'react-dom/client';
+
+function Car() {
+  return <h2>Hi, I am a Car!</h2>;
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Car />);
+
+
+const Component1 = (props) => {
+    return(
+        <div>
+            <h2>Component1</h2>
+        </div>
+    )
+};
+
+export default Component1;
+// export default Car;
+/*
+Lifecycle is: 
+1. mounting 
+2. updating 
+3. unmounting
+*/
+

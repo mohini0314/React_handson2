@@ -1,0 +1,126 @@
+.title{
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    }
+    .container{
+      display: flex;
+      justify-content: space-between;
+    }
+    input[type=text] {
+      width: 200px;
+      padding: 12px 20px;
+      margin: 20px 0 20px;
+      border: 3 px solid black;
+      border-radius: 50px;
+      font-size: 20px;
+    }
+    input[type=text]:hover{
+      border: 3 px solid rgb(68, 28, 179);
+    }
+  
+    /* input[type=submit] {
+      width: 200px;
+      padding: 12px 20px;
+      margin: 20px 0 20px;
+      background-color:rgb(169, 169, 211) ;
+      border: 3 px solid black;
+      border-radius: 50px;
+      font-size: 30px;
+    } */
+    label{
+      font-size: 30px;
+    }
+    .result{
+      width: 100%;
+     margin: 20px;
+     background-color: blueviolet;
+     border: 3px solid black;
+     border-radius: 10px;
+    }
+    button{
+      width: 200px;
+      padding: 12px 20px;
+      margin: 20px 0 20px;
+      background-color:rgb(169, 169, 211) ;
+      border: 3 px solid black;
+      border-radius: 50px;
+      font-size: 30px;
+  
+    }
+    .card{
+      background-color: rgb(155, 214, 230);
+      width: 1200px;
+      border: 3px solid black;
+    }
+    .column {
+      float: left;
+      width: 45%;
+      padding: 0 10px;
+    }
+    .row {margin:5px;}
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .infocard {
+      text-align: center;
+      padding:20px;
+      font-size: 20px;
+      background-color: #ec71b5;
+      border: 3px solid black;
+      border-radius: 30px;
+      margin: 5px;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+      .title{
+        color: black;
+        font-size: 20px;
+        font-weight: bolder;
+        }
+        input[type=text] {
+          width: 150px;
+          background-color: #71ecbb;
+          padding: 12px 20px;
+          margin: 10px 0 20px;
+          border: 3 px solid black;
+          border-radius: 50px;
+          font-size: 20px;
+        }
+        label{
+          font-size: 25px;
+        }
+        .card{
+          width: 350px;
+          background-color: rgb(26, 106, 128);
+
+        }
+        .column {
+          float: left;
+          width: 100%;
+          padding:0px;
+        }
+        .row {margin:5px;}
+        .infocard {
+          font-size: 15px;
+          background-color: #e63f50b4;
+          border: 3px solid black;
+          margin: 5px;
+        }
+        button{
+          background-color: rgb(29, 113, 113);
+          border:  3px solid rgba(0, 0, 0, 0.863);
+          font-size: 25px;
+      
+        }
+    }
+  
+  
+  
+  
+  
+  
+  

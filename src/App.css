@@ -1,0 +1,20 @@
+
+.App {
+  text-align: center;
+}
+.App-header {
+  background-image: linear-gradient(rgb(160, 222, 236), rgb(228, 151, 170),rgb(236, 219, 228));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+} 
+@media only screen and (max-width: 600px){
+  .App-header {
+    background-image: linear-gradient(rgb(208, 239, 129), rgb(43, 89, 95),rgb(159, 27, 97));
+  }
+}
+
+
